@@ -139,20 +139,104 @@ img {
   margin: 2.5rem 1.7rem 0rem 0rem;
 }
 
-/* .grid {
- display: flex;
- grid-template-columns: 1fr 1fr;
-} */
-/* @media (max-width: 680px) {
- .archive {
-  display: flex;
-  flex-direction: column;
- }
+@media (min-width: 427px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
- .article {
-  margin-bottom: 2em;
- }
-} */
+h1 {
+  font-size: 2rem;
+  margin: 1.2rem 0 2rem 0.7rem;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  font-weight: bold;
+  letter-spacing: -0.1rem;
+}
+
+.who {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  font-family: "Lora", serif;
+  margin: 0 0 0.5rem 0.7rem;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.01rem;
+}
+
+p {
+  margin: 0 0 3rem 0.7rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  letter-spacing: 0.01rem;
+  line-height: 1.1rem;
+}
+
+.name {
+  display: inline-block;
+  font-size: 0.7rem;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 0rem;
+}
+
+.vertical-text {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  margin: 0rem 0.8rem 0rem -5.2rem;
+  color: black;
+  font-size: 0.6rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+img {
+  position: relative;
+  display: inline-block;
+  width: 91%;
+  height: auto;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.bill,
+.shae,
+.griff {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  margin: 2.5rem 0.8rem 0rem 0.7rem;
+}
+
+.up {
+  margin-top: -0.5rem;
+}
+
+.saba,
+.skylah,
+.stan {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  margin: 2.5rem 1.7rem 0rem 0rem;
+}
+
 /* /* Single column display for phones 
 @media (max-width: 459px) {
  .archive {
