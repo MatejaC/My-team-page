@@ -10,7 +10,6 @@ $grey-dark: #3b3a3a;
 $blackish: #2a2a2a;
 
 // base styles
-
 *,
 *::before,
 *::after {
@@ -99,10 +98,9 @@ p {
  line-height: 1.1rem;
 }
 
-
 .name {
  display: inline-block;
- font-size: 0.7rem;
+ font-size: 0.8rem;
  color: $black;
  font-weight: bold;
  margin-bottom: 0rem;
@@ -126,7 +124,6 @@ img {
  height: auto;
 }
 
-
 .bill,
 .shae,
 .griff {
@@ -145,16 +142,23 @@ img {
  margin: 2.5rem 1rem 0rem 0.5rem;
 }
 
+footer {
+ display: inline-block;
+ grid-column-start: 1;
+ grid-column-end: 3;
+ font-size: 0.5rem;
+ text-align: center;
+ align-items: center;
+ margin: 3rem 0rem 1.4rem 0rem;
+}
 
 
-
-
+// media quries
 @media (min-width: 600px) {
  .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
  }
-
 
  h1 {
   grid-column-start: 1;
@@ -184,7 +188,6 @@ img {
   line-height: 1.1rem;
  }
 
-
  .name {
   display: inline-block;
   font-size: 0.8rem;
@@ -210,10 +213,6 @@ img {
   height: auto;
  }
 
-
- /* .up {
- margin-top: -0.5rem;
-} */
  .bill,
  .skylah {
   grid-column: 1;
@@ -230,6 +229,16 @@ img {
  .stan {
   grid-column: 3;
   margin: 0rem 6rem 0rem 0rem;
+ }
+
+ footer {
+  display: inline-block;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 0.6rem;
+  text-align: center;
+  align-items: center;
+  margin: 5rem 0 2rem 20rem;
  }
 }
 
