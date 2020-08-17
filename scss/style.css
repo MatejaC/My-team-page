@@ -167,43 +167,42 @@ footer {
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 3;
-    font-size: 2rem;
+    font-size: 2.1rem;
     margin: 4rem 0 5rem 5rem;
     font-weight: bold;
-    letter-spacing: -0.1rem;
+    letter-spacing: -0.18rem;
   }
   .who {
     -ms-grid-column: 3;
     grid-column: 3;
     font-family: "Lora", serif;
-    margin: 2rem;
+    margin: 4rem 0 5rem -6rem;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 700;
     letter-spacing: 0.01rem;
   }
   p {
     -ms-grid-column: 3;
     grid-column: 3;
-    margin: 0;
+    margin: -5.7rem 0 5rem -6rem;
     font-weight: 600;
-    font-size: 0.8rem;
-    letter-spacing: 0.01rem;
-    line-height: 1.1rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.15rem;
   }
   .name {
     display: inline-block;
-    font-size: 0.8rem;
-    color: #000000;
-    font-weight: bold;
+    font-size: 1.15rem;
     margin-bottom: 0rem;
+    letter-spacing: -0.02rem;
   }
   .vertical-text {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     -webkit-transform-origin: bottom right;
             transform-origin: bottom right;
-    margin: 0rem 0.8rem 0rem -6.5rem;
+    margin: 0rem 0.85rem 0rem -6rem;
     color: black;
     font-size: 0.7rem;
     font-weight: normal;
@@ -243,15 +242,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 5rem 0 2rem 20rem;
+    margin: 5rem 0 3rem 22rem;
   }
 }
-
-/* /* Single column display for phones 
-@media (max-width: 459px) {
- .archive {
-  display: flex;
-  flex-direction: column;
- }
-} */
 /*# sourceMappingURL=style.css.map */
