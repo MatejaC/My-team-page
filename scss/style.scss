@@ -1,7 +1,9 @@
 // variables
 
-$primary-font: "Lora", serif;
-$secondary-font: "Montserrat", sans-serif;
+$primary-font: "Lora",
+serif;
+$secondary-font: "Montserrat",
+sans-serif;
 $background-color: #ffffff;
 $black: #000000;
 $grey-dark: #3b3a3a;
@@ -61,11 +63,17 @@ p {
  clear: both;
 }
 
+.container {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+}
+
 h1 {
- font-size: 2rem;
- margin: 1.2rem 0 2rem 0.7rem;
+ display: inline-block;
  grid-column-start: 1;
  grid-column-end: 3;
+ font-size: 2rem;
+ margin: 1.2rem 0 2rem 0.7rem;
  font-weight: bold;
  letter-spacing: -0.1rem;
 }
@@ -75,7 +83,6 @@ h1 {
  grid-column-end: 3;
  font-family: $primary-font;
  margin: 0 0 0.5rem 0.7rem;
- grid-column: 1;
  text-transform: uppercase;
  font-size: 1rem;
  font-weight: 700;
@@ -83,14 +90,15 @@ h1 {
 }
 
 p {
+ grid-column-start: 1;
+ grid-column-end: 3;
  margin: 0 0 3rem 0.7rem;
  font-weight: 600;
  font-size: 0.8rem;
- grid-column-start: 1;
- grid-column-end: 3;
  letter-spacing: 0.01rem;
  line-height: 1.1rem;
 }
+
 
 .name {
  display: inline-block;
@@ -103,7 +111,7 @@ p {
 .vertical-text {
  transform: rotate(90deg);
  transform-origin: bottom right;
- margin: 0rem 0.8rem 0rem -5.2rem;
+ margin: 0rem 0.75rem 0rem -5.2rem;
  color: black;
  font-size: 0.6rem;
  font-weight: normal;
@@ -111,114 +119,118 @@ p {
 }
 
 img {
+ display: inline-block;
  position: relative;
  display: inline-block;
  width: 91%;
  height: auto;
 }
 
-.container {
- display: grid;
- grid-template-columns: 1fr 1fr;
-}
-
-.left-half {
- grid-column: 1;
- margin: 2.5rem 0.8rem 0rem 0.7rem;
-}
-
-.up {
- margin-top: -0.5rem;
-}
-
-.right-half {
- grid-column: 2;
- margin: 2.5rem 1.7rem 0rem 0rem;
-}
-
-@media (min-width: 427px) {
- .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
- }
-}
-
-h1 {
- font-size: 2rem;
- margin: 1.2rem 0 2rem 0.7rem;
- grid-column-start: 1;
- grid-column-end: 3;
- font-weight: bold;
- letter-spacing: -0.1rem;
-}
-
-.who {
- grid-column-start: 1;
- grid-column-end: 3;
- font-family: $primary-font;
- margin: 0 0 0.5rem 0.7rem;
- grid-column: 1;
- text-transform: uppercase;
- font-size: 1rem;
- font-weight: 700;
- letter-spacing: 0.01rem;
-}
-
-p {
- margin: 0 0 3rem 0.7rem;
- font-weight: 600;
- font-size: 0.8rem;
- grid-column-start: 1;
- grid-column-end: 3;
- letter-spacing: 0.01rem;
- line-height: 1.1rem;
-}
-
-.name {
- display: inline-block;
- font-size: 0.7rem;
- color: $black;
- font-weight: bold;
- margin-bottom: 0rem;
-}
-
-.vertical-text {
- transform: rotate(90deg);
- transform-origin: bottom right;
- margin: 0rem 0.8rem 0rem -5.2rem;
- color: black;
- font-size: 0.6rem;
- font-weight: normal;
- text-transform: uppercase;
-}
-
-img {
- position: relative;
- display: inline-block;
- width: 91%;
- height: auto;
-}
-
-.container {
- display: grid;
- grid-template-columns: 1fr 1fr;
-}
 
 .bill,
 .shae,
 .griff {
  grid-column: 1;
- margin: 2.5rem 0.8rem 0rem 0.7rem;
+ margin: 2.5rem 0.8rem 0rem 1.1rem;
 }
 
 .up {
  margin-top: -0.5rem;
 }
+
 .saba,
 .skylah,
 .stan {
  grid-column: 2;
- margin: 2.5rem 1.7rem 0rem 0rem;
+ margin: 2.5rem 1rem 0rem 0.5rem;
+}
+
+
+
+
+
+@media (min-width: 600px) {
+ .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+ }
+
+
+ h1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 2rem;
+  margin: 4rem 0 5rem 5rem;
+  font-weight: bold;
+  letter-spacing: -0.1rem;
+ }
+
+ .who {
+  grid-column: 3;
+  font-family: $primary-font;
+  margin: 2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.01rem;
+ }
+
+ p {
+  grid-column: 3;
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.01rem;
+  line-height: 1.1rem;
+ }
+
+
+ .name {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: $black;
+  font-weight: bold;
+  margin-bottom: 0rem;
+ }
+
+ .vertical-text {
+  transform: rotate(90deg);
+  transform-origin: bottom right;
+  margin: 0rem 0.8rem 0rem -6.5rem;
+  color: black;
+  font-size: 0.7rem;
+  font-weight: normal;
+  text-transform: uppercase;
+ }
+
+ img {
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  height: auto;
+ }
+
+
+ /* .up {
+ margin-top: -0.5rem;
+} */
+ .bill,
+ .skylah {
+  grid-column: 1;
+  margin: 0rem 0rem 0rem 6rem;
+ }
+
+ .saba,
+ .griff {
+  grid-column: 2;
+  margin: 5rem 2.8rem 2rem 2.8rem;
+ }
+
+ .shae,
+ .stan {
+  grid-column: 3;
+  margin: 0rem 6rem 0rem 0rem;
+ }
 }
 
 /* /* Single column display for phones 
