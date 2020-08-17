@@ -5,4 +5,4 @@ practical exercise from <https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0
 Challenge: Create my team page following the design. The page should be responsive.
 ...
 
-site published at <https://matejac.github.io/My-team-page/>
+site published at <https://matejac.github.io/devchallenges-my-team-page/>
