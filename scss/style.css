@@ -26,10 +26,8 @@
 }
 
 body {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #fafafa;
   font-size: 130%;
-  font-family: "Montserrat", sans-serif;
   font-size: 0.7rem;
 }
 
@@ -40,7 +38,6 @@ h4,
 h5,
 h6,
 p {
-  font-family: "Lora", serif;
   color: #000000;
 }
 
@@ -66,7 +63,8 @@ h1 {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
-  font-size: 2rem;
+  font-size: 2.25rem;
+  font-family: "PT Serif", serif;
   margin: 1.2rem 0 2rem 0.7rem;
   font-weight: bold;
   letter-spacing: -0.1rem;
@@ -76,12 +74,13 @@ h1 {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
-  font-family: "Lora", serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   margin: 0 0 0.5rem 0.7rem;
   text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.1rem;
   letter-spacing: 0.01rem;
+  color: #000000;
 }
 
 p {
@@ -89,17 +88,21 @@ p {
       grid-column-start: 1;
   grid-column-end: 3;
   margin: 0 0 3rem 0.7rem;
-  font-weight: 600;
-  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 0.875rem;
   letter-spacing: 0.01rem;
-  line-height: 1.1rem;
+  line-height: 1.3rem;
+  color: #000000;
 }
 
 .name {
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 0.87rem;
+  line-height: 1.3rem;
   color: #000000;
-  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   margin-bottom: 0rem;
 }
 
@@ -110,6 +113,9 @@ p {
           transform-origin: bottom right;
   margin: 0rem 0.75rem 0rem -5.2rem;
   color: black;
+  font: "PT Serif", serif;
+  font-size: 10px;
+  line-height: 0.8rem;
   font-size: 0.6rem;
   font-weight: normal;
   text-transform: uppercase;
@@ -121,6 +127,8 @@ img {
   display: inline-block;
   width: 91%;
   height: auto;
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+          transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .bill,
@@ -148,12 +156,25 @@ footer {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+  color: #a9a9a9;
+  font-weight: 600;
+  line-height: 1rem;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 3rem 0rem 1.4rem 0rem;
+}
+
+footer a:link {
+  text-decoration: none;
+  color: #000000;
+}
+
+footer a {
+  color: inherit;
 }
 
 @media (min-width: 600px) {
@@ -175,7 +196,7 @@ footer {
   .who {
     -ms-grid-column: 3;
     grid-column: 3;
-    font-family: "Lora", serif;
+    font-family: "Poppins", sans-serif;
     margin: 4rem 0 5rem -6rem;
     text-transform: uppercase;
     font-size: 1.25rem;
@@ -236,13 +257,19 @@ footer {
     display: inline-block;
     -ms-grid-column: 1;
         grid-column-start: 1;
-    grid-column-end: 3;
-    font-size: 0.6rem;
+    grid-column-end: 4;
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 5rem 0 3rem 22rem;
+    justify-items: center;
+  }
+  footer a:link {
+    text-decoration: none;
+    color: #000000;
+  }
+  footer a {
+    color: inherit;
   }
 }
 /*# sourceMappingURL=style.css.map */

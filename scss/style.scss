@@ -1,13 +1,11 @@
 // variables
 
-$primary-font: "Lora",
-serif;
-$secondary-font: "Montserrat",
-sans-serif;
-$background-color: #ffffff;
+$fontPTserif: "PT Serif", serif;
+$fontMontserrat: "Montserrat", sans-serif;
+$fontPoppins: "Poppins", sans-serif;
+$background-color: #fafafa;
 $black: #000000;
-$grey-dark: #3b3a3a;
-$blackish: #2a2a2a;
+$colorFooter: #a9a9a9;
 
 // base styles
 *,
@@ -35,9 +33,7 @@ $blackish: #2a2a2a;
 
 body {
  background-color: $background-color;
- color: $black;
  font-size: 130%;
- font-family: $secondary-font;
  font-size: 0.7rem;
 }
 
@@ -48,7 +44,6 @@ h4,
 h5,
 h6,
 p {
- font-family: $primary-font;
  color: $black;
 }
 
@@ -71,7 +66,8 @@ h1 {
  display: inline-block;
  grid-column-start: 1;
  grid-column-end: 3;
- font-size: 2rem;
+ font-size: 2.25rem;
+ font-family: $fontPTserif;
  margin: 1.2rem 0 2rem 0.7rem;
  font-weight: bold;
  letter-spacing: -0.1rem;
@@ -80,29 +76,34 @@ h1 {
 .who {
  grid-column-start: 1;
  grid-column-end: 3;
- font-family: $primary-font;
+ font-family: $fontPoppins;
+ font-weight: 600;
  margin: 0 0 0.5rem 0.7rem;
  text-transform: uppercase;
- font-size: 1rem;
- font-weight: 700;
+ font-size: 1.1rem;
  letter-spacing: 0.01rem;
+ color: $black;
 }
 
 p {
  grid-column-start: 1;
  grid-column-end: 3;
  margin: 0 0 3rem 0.7rem;
- font-weight: 600;
- font-size: 0.8rem;
+ font-family: $fontPoppins;
+ font-weight: normal;
+ font-size: 0.875rem;
  letter-spacing: 0.01rem;
- line-height: 1.1rem;
+ line-height: 1.3rem;
+ color: $black;
 }
 
 .name {
  display: inline-block;
- font-size: 0.8rem;
+ font-size: 0.87rem;
+ line-height: 1.3rem;
  color: $black;
- font-weight: bold;
+ font-family: $fontPoppins;
+ font-weight: 600;
  margin-bottom: 0rem;
 }
 
@@ -111,6 +112,9 @@ p {
  transform-origin: bottom right;
  margin: 0rem 0.75rem 0rem -5.2rem;
  color: black;
+ font: $fontPTserif;
+ font-size: 10px;
+ line-height: 0.8rem;
  font-size: 0.6rem;
  font-weight: normal;
  text-transform: uppercase;
@@ -122,6 +126,7 @@ img {
  display: inline-block;
  width: 91%;
  height: auto;
+ transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .bill,
@@ -146,12 +151,23 @@ footer {
  display: inline-block;
  grid-column-start: 1;
  grid-column-end: 3;
- font-size: 0.5rem;
+ font-size: 0.8rem;
+ font-family: $fontMontserrat;
+ color: $colorFooter;
+ font-weight: 600;
+ line-height: 1rem;
  text-align: center;
  align-items: center;
  margin: 3rem 0rem 1.4rem 0rem;
-}
 
+ a:link {
+  text-decoration: none;
+  color: $black;
+ }
+ a {
+  color: inherit;
+ }
+}
 
 // media quries
 @media (min-width: 600px) {
@@ -171,7 +187,7 @@ footer {
 
  .who {
   grid-column: 3;
-  font-family: $primary-font;
+  font-family: $fontPoppins;
   margin: 4rem 0 5rem -6rem;
   text-transform: uppercase;
   font-size: 1.25rem;
@@ -233,10 +249,17 @@ footer {
  footer {
   display: inline-block;
   grid-column-start: 1;
-  grid-column-end: 3;
-  font-size: 0.6rem;
+  grid-column-end: 4;
   text-align: center;
   align-items: center;
-  margin: 5rem 0 3rem 22rem;
+  justify-items: center;
+
+  a:link {
+   text-decoration: none;
+   color: $black;
+  }
+  a {
+   color: inherit;
+  }
  }
 }
